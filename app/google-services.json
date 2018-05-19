@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "705773384287",
+    "firebase_url": "https://photion-photo.firebaseio.com",
+    "project_id": "photion-photo",
+    "storage_bucket": "photion-photo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705773384287:android:a923990c34a400d3",
+        "android_client_info": {
+          "package_name": "com.batuhanmete.photion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705773384287-hr6kqb258ptut4bebl30ejje7lpavtmm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.batuhanmete.photion",
+            "certificate_hash": "e1c1bf6525fd781df42d3a1c03d0a4ca043dd10d"
+          }
+        },
+        {
+          "client_id": "705773384287-rnuqf5gmvj8gfhdl3fptg6groe405hlq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOBsCvkAYYirA9k0Lxg1MBIGtQBOkMH8c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705773384287-rnuqf5gmvj8gfhdl3fptg6groe405hlq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
