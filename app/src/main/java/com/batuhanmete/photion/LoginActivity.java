@@ -36,11 +36,15 @@ public class LoginActivity extends Activity {
 
         setContentView(R.layout.activity_login);
 
+        //initializing button
         buttonRegister = findViewById(R.id.buttonRegister);
         buttonSignIn = findViewById(R.id.buttonSignIn);
+
+        //initializing editText
         emailText = findViewById(R.id.emailText);
         passwordText = findViewById(R.id.passwordText);
 
+        //initializing button click view
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
