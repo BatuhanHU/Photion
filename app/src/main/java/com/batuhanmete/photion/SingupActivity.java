@@ -88,6 +88,10 @@ public class SingupActivity extends AppCompatActivity {
             passwordText.setText("");
             passwordText2.setText("");
         }
+        else if(email.equals("") || password.equals("")){
+            Toast.makeText(SingupActivity.this, "Please fill all  boxes", Toast.LENGTH_SHORT).show();
+
+        }
         else{
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -95,11 +99,14 @@ public class SingupActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 // Sign up success, open the login page
-                                startActivity(new Intent(SingupActivity.this, LoginActivity.class));
+                                startActivity(new Intent(SingupActivity.this, MainActivity.class));
                                 finish();
 
                             } else {
-                                Toast.makeText(SingupActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SingupActivity.this, "An error occurred. Please try again", Toast.LENGTH_SHORT).show();
+                                emailText.setText("");
+                                passwordText.setText("");
+                                passwordText2.setText("");
 
                             }
 
